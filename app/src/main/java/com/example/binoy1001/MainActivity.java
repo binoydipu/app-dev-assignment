@@ -1,5 +1,6 @@
 package com.example.binoy1001;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -13,44 +14,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button audi, bugatti;
-    private TextView textView, toastTv;
-    private ImageView imageView, toastIv;
-
+    private Button assignment1, assignment2, assignment3, assignment4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        audi = findViewById(R.id.audi_btn);
-        bugatti = findViewById(R.id.bugatti_btn);
-        textView = findViewById(R.id.textview);
-        imageView = findViewById(R.id.imageview);
+        assignment1 = findViewById(R.id.assignment1_btn);
+        assignment2 = findViewById(R.id.assignment2_btn);
+        assignment3 = findViewById(R.id.assignment3_btn);
+        assignment4 = findViewById(R.id.assignment4_btn);
 
-        LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.custom_toast, findViewById(R.id.toast_layout));
-
-        toastIv = layout.findViewById(R.id.toast_iv);
-        toastTv = layout.findViewById(R.id.toast_tv);
-
-        final Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.BOTTOM, 0, 150);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout);
-
-        audi.setOnClickListener(v -> {
-            textView.setText("This is a picture of Audi R8");
-            imageView.setImageResource(R.drawable.audi);
-            toastIv.setImageResource(R.drawable.audi_icon);
-            toastTv.setText("Audi R8");
-            toast.show();
+        assignment1.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), Assignment1Activity.class);
+            startActivity(intent);
         });
-        bugatti.setOnClickListener(v -> {
-            textView.setText("This is a picture of Bugatti W16 Mistral");
-            imageView.setImageResource(R.drawable.bugatti);
-            toastIv.setImageResource(R.drawable.bugatti_icon);
-            toastTv.setText("Bugatti W16 Mistral");
-            toast.show();
+        assignment2.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), Assignment2Activity.class);
+            startActivity(intent);
         });
+//        assignment3.setOnClickListener(v -> {
+//            Intent intent = new Intent(getApplicationContext(), Assignment3Activity.class);
+//            startActivity(intent);
+//        });
+//        assignment4.setOnClickListener(v -> {
+//            Intent intent = new Intent(getApplicationContext(), Assignment4Activity.class);
+//            startActivity(intent);
+//        });
     }
 }

@@ -1,76 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="20dp"
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageview"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/audi"
-        android:padding="10dp"/>
-
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/title_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/black"
+        android:text="All the assignments of Smartphone Application Development Course. \nby, Binoy Bhushan Barman Dipu"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:padding="10dp"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="This is a picture of Audi R8"
-        android:background="@drawable/custom_textview"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/audi_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="5dp"
-            android:text="Audi"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:backgroundTint="#881C9A"/>
-
-        <Button
-            android:id="@+id/bugatti_btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="5dp"
-            android:text="Bugatti"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:backgroundTint="#EC971B"/>
-
-    </LinearLayout>
-
-    <TextView
+    <Button
+        android:id="@+id/assignment1_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Assignment 1"
+        android:textSize="16sp"
         android:layout_marginTop="10dp"
-        android:text="© Binoy Barman"
-        android:textColor="@color/black"
-        android:textStyle="italic"
-        android:gravity="bottom"
-        android:textSize="16sp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+    <Button
+        android:id="@+id/assignment2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment 2"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+    <Button
+        android:id="@+id/assignment3_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment 3"
+        android:textSize="16sp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment1_btn" />
+
+    <Button
+        android:id="@+id/assignment4_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment 4"
+        android:textSize="16sp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment2_btn" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Binoy1001" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#045C93</item>
     </style>
 </resources>
