@@ -10,7 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,18 +28,23 @@ public class MainActivity extends AppCompatActivity {
         assignment3 = findViewById(R.id.assignment3_btn);
         assignment4 = findViewById(R.id.assignment4_btn);
 
+        // Contains ImageView, Button, Custom Toast
         assignment1.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), Assignment1Activity.class);
             startActivity(intent);
         });
+
+        // Contains CheckBox and RadioGroup
         assignment2.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), Assignment2Activity.class);
             startActivity(intent);
         });
-//        assignment3.setOnClickListener(v -> {
-//            Intent intent = new Intent(getApplicationContext(), Assignment3Activity.class);
-//            startActivity(intent);
-//        });
+
+        // Contains RatingBar, SeekBar and Switch
+        assignment3.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), Assignment3Activity.class);
+            startActivity(intent);
+        });
 //        assignment4.setOnClickListener(v -> {
 //            Intent intent = new Intent(getApplicationContext(), Assignment4Activity.class);
 //            startActivity(intent);

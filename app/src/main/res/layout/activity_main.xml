@@ -49,7 +49,6 @@
         android:layout_height="wrap_content"
         android:text="Assignment 3"
         android:textSize="16sp"
-        android:backgroundTint="@color/cardview_dark_background"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/assignment1_btn" />

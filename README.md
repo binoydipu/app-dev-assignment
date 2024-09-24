@@ -4,6 +4,6 @@
 This repository contains the assignments of our coursework.
 
 Submitted by: <br>
-<tab>    Binoy Bhushan Barman Dipu <br>
-<tab>    ID: 0182210012101001 <br>
-<tab>    Leading University, Sylhet. <br>
+    Binoy Bhushan Barman Dipu <br>
+    ID: 0182210012101001 <br>
+    Leading University, Sylhet. <br>

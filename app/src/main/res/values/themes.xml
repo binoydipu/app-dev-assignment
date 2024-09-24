@@ -1,9 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Binoy1001" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Binoy1001" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">#2196F3</item>
          <item name="colorPrimaryVariant">#045C93</item>
+        <item name="colorPrimaryDark">#07264D</item>
     </style>
 
     <style name="Theme.Binoy1001" parent="Base.Theme.Binoy1001" />
