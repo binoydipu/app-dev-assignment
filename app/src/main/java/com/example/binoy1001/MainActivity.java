@@ -2,18 +2,9 @@ package com.example.binoy1001;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), Assignment3Activity.class);
             startActivity(intent);
         });
-//        assignment4.setOnClickListener(v -> {
-//            Intent intent = new Intent(getApplicationContext(), Assignment4Activity.class);
-//            startActivity(intent);
-//        });
+        assignment4.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), FormActivity.class);
+            startActivity(intent);
+        });
     }
 }
