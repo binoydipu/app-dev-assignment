@@ -2,24 +2,26 @@ package com.example.binoy1001;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button assignment1, assignment2, assignment3, formActivity, btnListView;
+    private Button assignment1, assignment2, assignment3, formActivity, btnListView, btnExpandedList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.d("logg", "I am in main activity");
         assignment1 = findViewById(R.id.assignment1_btn);
         assignment2 = findViewById(R.id.assignment2_btn);
         assignment3 = findViewById(R.id.assignment3_btn);
         formActivity = findViewById(R.id.form_activity_btn);
         btnListView = findViewById(R.id.listview_btn);
+        btnExpandedList = findViewById(R.id.expanded_list_btn);
 
         // Contains ImageView, Button, Custom Toast
         assignment1.setOnClickListener(v -> {
@@ -45,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnListView.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
+            startActivity(intent);
+        });
+
+        btnExpandedList.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ExpandableListActivity.class);
             startActivity(intent);
         });
     }
